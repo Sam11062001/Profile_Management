@@ -2,59 +2,142 @@
 <html>
     <head>
         <title>DataHut</title>
-        <meta charset="UTF-8"/>
-        <style>
-            body{
-                background-color:#0a353e;
-                color:white;
-                font-size:20px;
-            }
-            a{
-                color:white;
-                font-size:30px;
-                
-            }
-            h1{
-                text-align: center;
-            }
-            img{
-               image-resolution: 1080px;
-            }
-        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , intial-scale=1.0">
+       <link rel="stylesheet" href="css/index_css.css">
+       <script src="https://kit.fontawesome.com/7bdae91fc1.js" crossorigin="anonymous"></script>
+       
     </head>
     <body>
-        <header role="banner">
-            <h1>DataHut-Personal Management</h1>
-            <img src="images/logo.jpg"/>
-            <p>Put your Personal Data in there place we will take care of it...!!</p>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="Account/Login.html">Login</a></li>
-                <li><a href="Account/Register.html">SignUp</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h1><b>What is need for this?</b></h1>
-            <aside>As a country in India we are having lot of data,personal document,lots of password ,many certificates,such a huge contact list,lot of personal files,your personal dairy so to manage all this physically is not a good idea or a good way because it may lost,it may tear up,you may forget your passwords and also you don't want to share with any body.</aside>
-            <h1><b>Why to use DataHut-The Perosnal Management ?</b></h1>
-            <aside>So we need a single place in which you can access your each and every personal things but again the mind will strike <b>what about safety?</b> &nbsp;&nbsp;DataHut is the online webapplication which offers the several functionality to it users to manage all their personal kind thing at a single step with the easy access for you anytime anywhere.we dont sell your data ,we take the care of our user,we provide 24*7 help center,we take all measure regarding your data safety and it is our first priority,You can trust us.So why to wait just create your account with the simple steps and start using your digital valut whose control is in your hands and no body can access it except you.</aside>
-            <h1><b>Our Services</b></h1>
-            <ul>
-                <li>Document Management</li>
-                <li>Password Manager</li>
-                <li>Personal Diary</li>
-                <li>Personal Contact List</li>
-                <li>Banking Managment</li>
-                <li>Sharing Center</li>
-                <li>Help Center 24*7</li>
+       <div class="container">
+           <div class="menu">
+               <ul>
+                    
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="#service_section">Services</a></li>
+                   <li><a href="#about_section">About Us</a></li>
+                   <li><a href="#contact_section">Contact Us</a></li>
+                   <li class="header_login_button"><a href="Account/Login.html"><span>Login</span></a></li>
+                   <li class="header_signup_button"><a href="Account/Register.html"><span>Signup</span></a></li>
+               </ul>
+           </div>
+           <div class="banner">
+               <div class="app_text">
+                   <h1>Put Your Personal in their place<br> We Will take Care Of It.</h1>
+                   <p>We simply your managament and make it easy to access for you anytime anywhere.<br>We never sell your data to anyone.</p>
+               </div>
+           </div>
+          
+       </div>
 
-            </ul>
-        </main>
-        <footer>
-            <h1>About Me</h1>
-            <p>I am a student of the Dharmsinh Desai University .This the Web-Application project for the semester 5 .I am here to serve you as best as I can and I will asure you about the safety of your personal data so that you can be free from the that tedious management work . </p>
-            
-        </footer>
+       <!--Service section-->
+       <div class="service_section" id="service_section">
+           <h1>Our Services</h1>
+           <div class="cen">
+               <div class="service">
+                <i class="fas fa-id-card"></i>
+                <h2>Document Manager</h2>
+                <p>You can upload all your document like passport,aadhar-card,pan-card,election-card,birthdate certificate,license card</p>
+               </div>
+               <div class="service">
+                <i class="fas fa-key"></i>
+                <h2>Password Manager</h2>
+                <p>You can save your password so that you don't need to remember now just acces it anytime anywhere and use it.</p>
+               </div>
+               <div class="service">
+                <i class="fas fa-address-card"></i>
+                <h2>Contact-List</h2>
+                <p>You can upload all your contact information like contact number,their emails and about them so that you don'y need to remember anymore.</p>
+               </div>
+               <div class="service">
+                <i class="fas fa-book"></i>
+                <h2>Personal Diary</h2>
+                <p>you can write your personal dairy in the Datahut so that no one can see and now no need to hide your personal dairy physically it would be safe and secure with us.</p>
+               </div>
+               <div class="service">
+                <i class="fas fa-id-card"></i>
+                <h2>Track Activity</h2>
+                <p>You can see your activity of yours on your Datahut account so that you can know what you have access when.</p>
+               </div>
+               <div class="service">
+                <i class="fas fa-download"></i>
+                <h2>Download</h2>
+                <p>You can download your personal documents anywhere anytime so now need to carry it physically just use Datahut to access it.</p>
+               </div>
+               
+           </div>
+       </div>
+
+       <!--About me-->
+       <div class="about_section" id="about_section">
+           
+           <div class="container_about">
+               <h1>Saurav Laddha</h1>
+               <div class="image">
+                <img src="images/profile.jpg" alt="photograph of me">
+            </div>
+            <p>My Name is Saurav Omprakash Laddha.I am pursuing computer engineering degree from the Dharmsinh Desai University.This is my Semester 5 project of advance technology on the topic of the perosnal profile management so that people does not manage their personal and private data physically making the things simple for thr people,so that just need to put all their personal things on datahut and access this things anytime and anywhere from the world wihtout having worry of the physical document.</p>
+           </div>
+         </div>
+
+         <!--contact section-->
+         <div class="contact_section" id="contact_section">
+             <div class="inner_width">
+                <h1>Get in touch with us</h1>
+                <input tyep="text" name="name" placeholder="Your Name" class="name"/>
+                <input type="text" name="lastName" placeholder="Your Last Name" class="lastName"/>
+                <input type="email" name="email" placeholder="Your Email" class="email"/>
+                <input type="text" name="subject" row="1" class="subject" placeholder="Your Subject"/>
+                <textarea row="1" name="message" class="message" placeholder="Message"></textarea>
+                <button>Get in touch</button>
+
+             </div>
+         </div>
+
+         <!--footer section-->
+         <div class="footer">
+             <div class="inner_section">
+                 <div class="left_area">
+                     <h1>DataHut-Online Personal Management</h1>
+                     <p>DataHut is here to manage your personal things in safe and secure way so that you can free from the tedious document ,password,personal dairy,contact information management in the physical manner.You can put all your personal things here and can access it anytime anywhere.</p>
+                 </div>
+                 <div class="quick_link">
+                     <h1>Quick links</h1>
+                     <div class="links">
+                         <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#service_section">Services</a></li>
+                            <li><a href="#about_section">About Us</a></li>
+                            <li><a href="#contact_section">Contact Us</a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 <div class="personal_info">
+                     <h1>Personal Info</h1>
+                     <div class="info1">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email:<span><a href = "mailto:datahut123sam@gmail.com">datahut123sam@gmail.com</a></span></h3>
+                     </div>
+                     <br>
+                     <div class="info2">
+                        <i class="fas fa-phone"></i>
+                        <h3>phone:<span><a href = "tel:8140746417">+91 814-074-6417</a></span></h3>
+                     </div>
+                     <br>
+                     <div class="info3">
+                        <i class="fas fa-map-marker"></i>
+                        <h3>Address:<span>DDU,Nadiad,Gujarat,India-387001</a></span></h3>
+                     </div>
+                 </div>
+
+             </div>
+
+             <div class="copyright">
+                 <p>Copyright&#169DataHut.Ltd|All rights reserved.</p>
+                 <p>Designed by Saurav Omprakash Laddha</p>
+             </div>
+             
+         </div>
+
     </body>
 </html>
