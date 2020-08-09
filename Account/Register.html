@@ -3,99 +3,55 @@
     <title>  
     Registration Page  
     </title>  
-    <style>
-        
-    </style>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../javascript/register.js"></script>
     </head>  
-    <body>  
-    <br>  
-    <br>  
-    <h1>DataHut Registration Form</h1>
-    <form action="OTP.html" method="POST"> 
+    <body>
+     <form action="#"  onsubmit="return validation()"  id="form" method="POST"> 
+     
+        <div class="register_section" id="register_section">
+            <div class="inner_width">
+               
+               <h1 id="header">DataHut Registeration</h1>
+               
+               <input type="text" name="name" placeholder="Your Name" class="name" id="f_name" autocomplete="off"/>
+               <span id="first_name_error"></span>
+
+               <input type="text" name="lastName" autocomplete="off" placeholder="Your Last Name" class="lastName" id="l_name"/>
+               <span id="last_name_error"></span>
+
+               <input type="text" name="email"  autocomplete="off" placeholder="Your Email" class="email" id="email" />
+               <span id="email_error"></span>
+
+               <input type="text" name="username" autocomplete="off"  placeholder="Your username" class="email" id="username"/>
+                <span id="username_error"></span>
+
+               <input type="password" name="password" autocomplete="off"  placeholder="Your Password" class="email" id="password"/>
+               <span id="password_error"></span>
+
+               <input type="password" name="c_password" autocomplete="off" placeholder="Your Confirm password" class="email" id="c_password"/>
+               <span id="confirm_password_error"></span>
+               
+               <input type="date" name="birthdate" autocomplete="off"  placeholder="Your Birthdate" class="email" id="birthdate"/>
+               <span id="birthdate_error"></span>
+               
+               <input type="text" name="m_no" autocomplete="off" placeholder="Your Mobile Number" class="email" id="mobile_number"/>
+               <span id="m_no"></span>
+               
+               <input type="text" name="nick_name" autocomplete="off"  placeholder="What is Your Nick Name?" class="email" id="nick_name"/>
+               <span id="nick_error"></span>
+               
+               <br>
+               <button type="submit"  value="submit">Register</button>
+
+            </div>
+        </div>  
         
-        
-    
-    <label> Firstname </label>         
-    <input type="text" name="firstname"  title="Enter your firstname" size="30" required/> <br> <br>  
    
-    <label> Middlename </label>     
-    <input type="text" name="middlename"  title="Enter your Middle Name" size="30" required/> <br> <br>  
-    
-    <label> Lastname </label>         
-    <input type="text" name="lastname" size="30"  title="Enter your lastname" required/> <br> <br>  
-      
-   <label>Birthdate</label>
-    <input type="date" name="birthdate"  required/>
-    <br>  
-    <br>  
-   
-    <label>Age</label>
-    <input type="number" size="2"  name="age" title="Enter your age" pattern=[0-9]{3} required/>
-    <br>
-    <br>
-   
-    <label>   
-    Gender :  
-    </label><br>  
-    <input type="radio" name="male"/> Male <br>  
-    <input type="radio" name="female"/> Female <br>  
-    <input type="radio" name="other"/> Other  
-    <br>  
-    <br>
-   
-    <label>Occupation</label>  
-    <input type="text" name="occupation" size="30" title="Like buissness,teacher,student or anyother" required />
-    <br>
-    <br>
-    
-    <label>Address</label>
-    <textarea name="address" size="250" title="Enter your address here" required></textarea>
-    <br>
-    <br>
-   
-    <label>City</label>
-    <input type="text" size="30" title="Enter your city Name" name="city" required />
-    <br>
-    <br>
-
-    <label>Pincode</label>
-    <input type="text" size="6" name="pincode" title="Enter your pincode" title="Enter your 6 digit pincode" required pattern="[0-9]{6}"/>
-    <br>
-    <br>
-
-    <label>State</label>
-    <input type="text" name="state" title="Enter your state" title="Enter your State" required />
-    <br>
-    <br>
-
-   <label>   
-    Phone :  
-    </label>  
-    <input type="text" name="country code"  value="+91" size="2"/>   
-    <input type="text" name="phone" size="10" pattern=[6789]{1}[0-9]{9} required title="Enter your 10 digit Mobile Number"/> 
-    <br> 
-    <br>  
-   
-   
-   <label>Email:</label>   
-    <input type="email" id="email" name="email"/> <br>    
-    <br> 
-    <br>  
-
-    <label>UserName</label>
-    <input type="text" name="username"  title="Type your username for the Data Hut account" required size="30"/> 
-    <br>
-    <br>
-
-    Password:  
-    <input type="Password" id="pass" name="pass"> <br>   
-    <br> 
-    <br>  
-
-    Re-type password:  
-    <input type="Password" id="repass" name="repass"> <br> <br>  
-    <input type="button" value="Submit"/>  
-    <input type="reset" value="Reset"/>
     </form>  
+    
     </body>  
     </html>

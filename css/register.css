@@ -1,0 +1,97 @@
+body{
+    background-color: #42455a;
+    font-family: 'Raleway', sans-serif;
+    
+
+}
+
+.register_section{
+    font-family: 'Raleway', sans-serif;
+    height:1500px;
+    background:#b2b1b1;
+    text-align:center;
+    box-sizing: border-box;
+    padding :50px;
+
+}
+.inner_width{
+    font-family: 'Raleway', sans-serif;
+    height:100%;
+    max-width: 100%;
+    margin:auto;
+    padding:0 20px;
+    width:600px;
+
+    
+}
+
+.register_section h1{
+
+    font-size:30px;
+    color:#42455a;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 1000;
+
+}
+
+
+.name,.email,.message,.lastName,.subject{
+    font-family: 'Raleway', sans-serif;
+
+    margin-top:30px;
+    background:none;
+    border:none;
+    outline:none;
+    border-bottom: 1px solid;
+    
+    padding:10px 6px;
+    font-size:20px;
+    margin-bottom:40px;
+}
+.inner_width span{
+    text-align: left;
+    float:left;
+    color:red;
+    font-weight: bold;
+    width:100%; 
+}
+.name{
+    float:left;
+    width:100%;
+}
+.lastName{
+    float:right;
+    width:100%;
+}
+.email{
+    float:left;
+    width:100%;
+}
+.subject{
+    float:left;
+    width:100%;
+}
+.message{
+    min-width:100%;
+    max-width:100%;
+}
+
+.register_section button{
+    background:none;
+    color:#42455a;
+    border:1px solid #42455a;
+    padding:12px 30px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size:14px;
+    transition: 0.4s linear;
+    cursor:pointer;
+    
+    
+}
+.register_section button:hover{
+    background:#42455a;
+    color:#fff;
+}
