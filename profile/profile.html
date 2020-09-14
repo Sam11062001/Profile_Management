@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/Home.css">
+	<link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <title>Data Hut-Profile</title>
+	<script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+	    $(document).ready(function(){
+            $(".sidebar-header").hide("slow");
+            $(".sidebar-header").show("slow");
+            $('ul li').each(function(){
+                $(this).hide("slow");
+              });
+            $('ul li').each(function(){
+                $(this).show("slow");
+			  });
+			$("#Account").addClass("active");
+			$('#search').hide();
+			$("#user_image").hide();
+			$("#user_image").show("slow");
+	})
+	
+		 
+       
+	</script>
+    
+  </head>
+  <body>
+   
+   <div class="wrapper">
+   	<nav id="sidebar">
+   		<div class="sidebar-header">
+   			<h3>DATA HUT</h3>
+   		</div>
+   		
+   		
+   		<ul class="lisst-unstyled components">
+            <li id="Home">
+                <a href="../Home/Home.html" data-toogle="collapse" aria-expanded="false">Home</a>
+            </li>
+            <li id="Document ">
+                <a href="../Document/Document.html">Document</a>
+            </li>
+            <li id="Password">
+                <a href="../Password/Password.html">Password</a>
+            </li>
+            <li id="Contacts">
+                <a href="../Contact_List/Contact.html">Contacts</a>
+            </li>
+            <li id="Personal Dairy">
+                <a href="../Personal_Dairy/Dairy.html">Personal Dairy</a>
+            </li>
+            <li id="Bank_Informtion">
+                <a href="../Banking/Bank.html">Bank Information</a>
+            </li >
+            <li id="Account">
+                <a href="../profile/profile.html">Account</a>
+            </li>
+            <li id="Logout">
+                <a href="../Home/myHome.html">Logout</a>
+            </li>
+            <li id="Help_Center">
+                <a href="../HelpCenter/help.html">Help Center</a>
+            </li>
+        </ul>
+   	</nav>
+   	
+   	<div class="content">
+   		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button type="button" id="sidebarCollapse" class="btn btn-info">
+          <i class="fa fa-align-justify"></i> <span>DataHut Menu</span>
+      </button>
+   		    <input type="text" id="search" placeholder="Search"/>
+   		
+   		
+  
+        </nav>
+  	
+    <div class="main">
+
+		<!--<div class="card text-center" style="width: 18rem;">
+			<img class="card-img-top" src="../images/account_!.jpg" alt="Card image cap">
+			<div class="card-body">
+			  <h5 class="card-title">Card title</h5>
+			  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			  <a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div> -->
+		<div class="card text-center">
+			<div class="card-header">
+				 <h2>Profile</h2>
+			</div>
+			<div class="card-body">
+				<div class="row">
+					<div class="col-sm-3">
+						<img class="card-img-top" id="user_image" src="../images/account_!.jpg" alt="Card image cap">
+				
+					</div>
+					<div class="col-sm-6" id="information" style="font-size:large;">
+						<label for="name" id="name">Name &NonBreakingSpace;:</label>
+						<label for="name" id="name_display">Saurav Omprakash Laddha</label>
+						<input type="text" name="update_name" id="update"/>
+					</div>
+				</div>
+				
+			  <a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+			
+		  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  	
+
+
+
+   	</div>
+ 
+   </div>
+    
+
+  <script>
+
+
+	$(document).ready(function(){
+		$('label').addClass("information");
+    $('input').hide();
+    $('#sidebarCollapse').on('click',function(){
+      $('#sidebar').toggleClass('active');
+    });
+    
+    $('#sidebarCollapse').click();
+	})
+  </script>
+    
+    
+    
+    
+    
+  </body>
+</html>

@@ -1,54 +1,119 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>DataHut</title>
-        <meta charset="utf-8"/>
-        <style>
-            body{
-                font-size: 25px;;
-            }
-        </style>
-    </head>
-    <body>
-        <!--header tag start-->
-        <header>
-            <div class="left_area">
-                <h2>Data<span>Hut</span></h2>
-            </div>
-            <div class="right_area">
-                <a href="../index.html">Logout</a>
-            </div>
-        </header>
-        <!--header tag end-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!--main section begins-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-        <div class="sidebar">
-           
-                <img src="../images/profile.jpg" class="profile_manage" width="150px" height="150px"/>
-                <h3>UserProfile </h3>
+    <title>Data Hut</title>
+    <link rel="icon" href="../images/database.png" type="image/x-icon">
+    
+  </head>
+  <body>
+   
+   <div class="wrapper">
+   	<nav id="sidebar">
+   		<div class="sidebar-header">
+   			<h3>DATA HUT</h3>
+   		</div>
+   		
+   		
+   		<ul class="lisst-unstyled components">
+            <li id="Home">
+                <a href="Home.html" data-toogle="collapse" aria-expanded="false">Home</a>
+            </li>
+            <li id="Document ">
+                <a href="../Document/Document.html">Document</a>
+            </li>
+            <li id="Password">
+                <a href="../Password/Password.html">Password</a>
+            </li>
+            <li id="Contacts">
+                <a href="../Contact_List/Contact.html">Contacts</a>
+            </li>
+            <li id="Personal Dairy">
+                <a href="../Personal_Dairy/Dairy.html">Personal Dairy</a>
+            </li>
+            <li id="Bank_Informtion">
+                <a href="../Banking/Bank.html">Bank Information</a>
+            </li >
+            <li id="Account">
+                <a href="../profile/profile.html">Account</a>
+            </li>
+            <li id="Logout">
+                <a href="../Home/myHome.html">Logout</a>
+            </li>
+            <li id="Help_Center">
+                <a href="../HelpCenter/help.html">Help Center</a>
+            </li>
+        </ul>
+   	</nav>
+   	
+   	<div class="content">
+   		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fa fa-align-justify"></i> <span>DataHut Menu</span>
+            </button>
 
-                <a href="../Document/Document.html">Document</a><br><br>
-                <a href="../Password/Password.html">Password</a><br><br>
-                <a href="../Contact_List/Contact.html">Contact</a><br><br>
-                <a href="../Personal_Dairy/Dairy.html">Personal Dairy</a><br><br>
-                <a href="../Banking/Bank.html">Banking Information</a><br><br>
-                <a href="../Account/profile.html">Profile</a><br><br>
-                <a href="../HelpCenter/help.html">Help Center</a><br><br>
+   		    <input type="text" id="search" placeholder="Search"/>
+               
+   		
+  
+        </nav>
+  	
+    <div class="main">
 
-           
-        </div>
-        <!--main section ends-->
-        <!--footer section start-->
+    </div>
+  	
 
-        <footer>
-            <div class="About Us">
-                <h2>About Us</h2>
-                <p>I am Student of the Dharmsinh Desai University.This is my semester project on Advance Technology.This is the personal Data Management web application.You can store all your personal data here .We will asure your data safety.</p>
-            </div>
-           
-        </footer>
-        <!--footer section ends-->
-        
-    </body>
+
+
+   	</div>
+   	
+   	
+   	
+   	
+   	
+   </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+	    $(document).ready(function(){
+            $(".sidebar-header").hide("slow");
+            $(".sidebar-header").show("slow");
+            $('ul li').each(function(){
+                $(this).hide("slow");
+              });
+            $('ul li').each(function(){
+                $(this).show("slow");
+              });
+              $("#Home").addClass("active");
+              $('#sidebarCollapse').on('click',function(){
+				$('#sidebar').toggleClass('active');
+			});
+            setTimeout(function() {
+                $('#sidebarCollapse').click();
+          }, 1000);
+        }); 
+       
+	</script>
+    
+    
+    
+    
+    
+    
+  </body>
 </html>
